@@ -1,0 +1,26 @@
+{
+  "name": "javascript-beginner",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-jasmine2": "^29.3.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.5",
+    "@jest/globals": "^29.3.1",
+    "babel-jest": "^29.3.1"
+  },
+  "jest": {
+    "transform": {}
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
