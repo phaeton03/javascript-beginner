@@ -23,7 +23,7 @@ export function getSymbolsLength(a, b) {
  */
 export function sumThreeDigitNumber() {
     const threeDigitNumber = prompt('Enter three digit positive number');
-    const notDigitsRegex = /[^\d+]/;
+    const notDigitsRegex = /^-?\D+/;
 
     if (threeDigitNumber.length !== 3 || +threeDigitNumber < 0 || notDigitsRegex.test(threeDigitNumber)) {
         throw new Error("it must be positive three digit number!!!");
