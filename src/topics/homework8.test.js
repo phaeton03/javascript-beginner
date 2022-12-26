@@ -38,6 +38,7 @@ describe("minutesPass", function () {
 
   it("should call console", () => {
     const logSpy = jest.spyOn(console, "log");
+    minutesPass();
 
     expect(logSpy).toHaveBeenCalledTimes(1);
   });
