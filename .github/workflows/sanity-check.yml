@@ -14,7 +14,7 @@ jobs:
           npm install
       - name: Lint check
         run: |
-          npm run lint prettier --check .
+          npm run lint
       - name: Lint check
         run: |
           npm run test
