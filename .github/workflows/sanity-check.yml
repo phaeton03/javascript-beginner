@@ -2,19 +2,18 @@ name: PR Sanity Check
 
 on: pull_request
 
-runs:
-  using: 'node16'
-
 jobs:
   lint:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
+        with:
+          node-version: 16
       - name: Install Packages
         run: |
           npm install
+
       - name: Lint check
         run: |
           npm run lint
