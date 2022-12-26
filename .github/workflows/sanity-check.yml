@@ -2,6 +2,9 @@ name: PR Sanity Check
 
 on: pull_request
 
+runs:
+  using: 'node16'
+
 jobs:
   lint:
     runs-on: ubuntu-20.04
